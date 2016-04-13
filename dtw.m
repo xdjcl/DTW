@@ -1,12 +1,12 @@
-% Jingchang Liu 2016/04/11
-% Dynamic Time Warping
-% get the distance of two sequences
-
 function d  = dtw(Q,C,w)
-    % Q,C: two sequences
-    % w: window parameter
-    %      if Q(i) is matched with C(j) then |i-j|<=w
-    % d: resulting distance
+% Dynamic Time Warping
+% get the distance of two sequences 
+% Q,C: two sequences  
+% w: window parameter
+%      if Q(i) is matched with C(j) then |i-j|<=w
+% d: resulting distance
+%
+% Jingchang Liu 2016/04/11
 
     if nargin<3
         w=Inf;
@@ -39,5 +39,5 @@ function d  = dtw(Q,C,w)
         end
     end
 
-    d = DTW(M+1,N+1)
+    d = DTW(M+1,N+1);
 end
