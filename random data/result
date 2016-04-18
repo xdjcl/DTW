@@ -1,0 +1,119 @@
+Euclid: interval = 0.005000, accuracy = 0.411875 
+dtw: interval = 0.005000, accuracy = 0.394375
+
+Euclid: interval = 0.010000, accuracy = 0.403750 
+dtw: interval = 0.010000, accuracy = 0.418125
+
+Euclid: interval = 0.015000, accuracy = 0.415000 
+dtw: interval = 0.015000, accuracy = 0.421250
+
+Euclid: interval = 0.020000, accuracy = 0.413750 
+dtw: interval = 0.020000, accuracy = 0.438125
+
+Euclid: interval = 0.025000, accuracy = 0.450625 
+dtw: interval = 0.025000, accuracy = 0.478750
+
+Euclid: interval = 0.030000, accuracy = 0.473750 
+dtw: interval = 0.030000, accuracy = 0.503125
+
+Euclid: interval = 0.035000, accuracy = 0.488125 
+dtw: interval = 0.035000, accuracy = 0.543125
+
+Euclid: interval = 0.040000, accuracy = 0.510625 
+dtw: interval = 0.040000, accuracy = 0.566250
+
+Euclid: interval = 0.045000, accuracy = 0.515000 
+dtw: interval = 0.045000, accuracy = 0.619375
+
+Euclid: interval = 0.050000, accuracy = 0.544375 
+dtw: interval = 0.050000, accuracy = 0.635000
+
+Euclid: interval = 0.055000, accuracy = 0.535000 
+dtw: interval = 0.055000, accuracy = 0.673125
+
+Euclid: interval = 0.060000, accuracy = 0.587500 
+dtw: interval = 0.060000, accuracy = 0.707500
+
+Euclid: interval = 0.065000, accuracy = 0.605000 
+dtw: interval = 0.065000, accuracy = 0.684375
+
+Euclid: interval = 0.070000, accuracy = 0.620625 
+dtw: interval = 0.070000, accuracy = 0.740000
+
+Euclid: interval = 0.075000, accuracy = 0.653750 
+dtw: interval = 0.075000, accuracy = 0.743750
+
+Euclid: interval = 0.080000, accuracy = 0.675000 
+dtw: interval = 0.080000, accuracy = 0.772500
+
+Euclid: interval = 0.085000, accuracy = 0.701250 
+dtw: interval = 0.085000, accuracy = 0.800000
+
+Euclid: interval = 0.090000, accuracy = 0.711875 
+dtw: interval = 0.090000, accuracy = 0.816250
+
+Euclid: interval = 0.095000, accuracy = 0.733125 
+dtw: interval = 0.095000, accuracy = 0.826250
+
+Euclid: interval = 0.100000, accuracy = 0.729375 
+dtw: interval = 0.100000, accuracy = 0.854375
+
+Euclid: interval = 0.105000, accuracy = 0.761250 
+dtw: interval = 0.105000, accuracy = 0.861250
+
+Euclid: interval = 0.110000, accuracy = 0.758125 
+dtw: interval = 0.110000, accuracy = 0.878750
+
+Euclid: interval = 0.115000, accuracy = 0.779375 
+dtw: interval = 0.115000, accuracy = 0.891250
+
+Euclid: interval = 0.120000, accuracy = 0.794375 
+dtw: interval = 0.120000, accuracy = 0.896250
+
+Euclid: interval = 0.125000, accuracy = 0.803125 
+dtw: interval = 0.125000, accuracy = 0.930000
+
+Euclid: interval = 0.130000, accuracy = 0.826875 
+dtw: interval = 0.130000, accuracy = 0.925000
+
+Euclid: interval = 0.135000, accuracy = 0.817500 
+dtw: interval = 0.135000, accuracy = 0.945625
+
+Euclid: interval = 0.140000, accuracy = 0.851250 
+dtw: interval = 0.140000, accuracy = 0.959375
+
+Euclid: interval = 0.145000, accuracy = 0.863125 
+dtw: interval = 0.145000, accuracy = 0.948750
+
+Euclid: interval = 0.150000, accuracy = 0.876250 
+dtw: interval = 0.150000, accuracy = 0.955000
+
+Euclid: interval = 0.155000, accuracy = 0.883125 
+dtw: interval = 0.155000, accuracy = 0.978125
+
+Euclid: interval = 0.160000, accuracy = 0.885625 
+dtw: interval = 0.160000, accuracy = 0.962500
+
+Euclid: interval = 0.165000, accuracy = 0.892500 
+dtw: interval = 0.165000, accuracy = 0.980000
+
+Euclid: interval = 0.170000, accuracy = 0.911875 
+dtw: interval = 0.170000, accuracy = 0.985000
+
+Euclid: interval = 0.175000, accuracy = 0.917500 
+dtw: interval = 0.175000, accuracy = 0.988125
+
+Euclid: interval = 0.180000, accuracy = 0.916875 
+dtw: interval = 0.180000, accuracy = 0.990000
+
+Euclid: interval = 0.185000, accuracy = 0.936875 
+dtw: interval = 0.185000, accuracy = 0.987500
+
+Euclid: interval = 0.190000, accuracy = 0.954375 
+dtw: interval = 0.190000, accuracy = 0.995000
+
+Euclid: interval = 0.195000, accuracy = 0.955000 
+dtw: interval = 0.195000, accuracy = 0.994375
+
+Euclid: interval = 0.200000, accuracy = 0.960625 
+dtw: interval = 0.200000, accuracy = 0.992500

@@ -34,7 +34,7 @@ function d  = dtw(Q,C,w)
     %% DTW algorithm
     % d(i,j):The distance between Q(i) and C(j)
     for i = 2:M+1
-        for j = floor(max([2,i-w_value+1]) : min([N+1,i+w_value+1]))
+        for j = max([2,i-w_value+1]) : min([N+1,i+w_value+1])
             d = norm(Q(i-1)-C(j-1));
             DTW(i,j) = d+ min([DTW(i-1,j),DTW(i,j-1),DTW(i-1,j-1)]);
         end

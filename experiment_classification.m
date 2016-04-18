@@ -48,7 +48,7 @@ for interval = 0.005:0.005:0.2
         for k = 1:16
             % record distance between k-th test data and t-th train data
             dist_k_t = ones(16,1);
-            parfor t = 1:16
+            for t = 1:16
                 dist_k_t(t) = dtw(data_test(:,k),data_train(:,t));
             end
             % get the nearest train_data

@@ -1,38 +1,45 @@
-% An experiment of classification with different warp window
-% the data is getting from experiment_data.m
+% To get accuracy as wap window change
 %
 % Jingchang Liu
-% 2016/04/14
+% 2016/04/18
 
-%% classifing by dtw distance with different warp window
-% precision_result: record precision for different warp window
-% t:repeat time of classification
-% count: record number of correct classification
-precision_result = ones(500,1);
-for w = 1:500
-    count = 0;
-    for t = 1:100
-        run experiment_data.m;
-        data = [A_1,A_2,A_3,A_4,B_1,B_2,B_3,B_4,...
-            C_1,C_2,C_3,C_4,D_1,D_2,D_3,D_4];
-        dtw_dist = ones(4,1);
-        classify_result2 = repmat(['A'],[16 1]);
-        
+%% generate data from experiment_data.m
+interval = 0.135;
+run experiment_data.m
+data_test = [A_1,A_2,A_3,A_4,B_1,B_2,B_3,B_4,...
+    C_1,C_2,C_3,C_4,D_1,D_2,D_3,D_4];
+data_train = [A_train1,A_train2,A_train3,A_train4,...
+    B_train1,B_train2,B_train3,B_train4,...
+    C_train1,C_train2,C_train3,C_train4,...
+    D_train1,D_train2,D_train3,D_train4];
+
+%% get accuracy within different warp window
+% k:k-th test data
+% t:t-th train data
+% classify_result: recorde the classify result
+accuracy = ones(20,1);
+i = 1;
+for warp_window = 0:0.01:0.2
+    % recorde corret_num in each interval
+    record = ones(100,1);
+    for rep = 1:100      
+        classify_result = ones(16,1);
         for k = 1:16
-            dtw_dist(1) = dtw(data(:,k),A_train(1),w);
-            dtw_dist(2) = dtw(data(:,k),B_train(1),w);
-            dtw_dist(3) = dtw(data(:,k),C_train(1),w);
-            dtw_dist(4) = dtw(data(:,k),D_train(1),w);
-            temp = find(dtw_dist == min(dtw_dist),1);
-            
-            % correct classification
-            if((k==1 || k==2 || k==3 || k==4) && temp==1) ||...
-                    ((k==5 || k==6 || k==7 || k==8) && temp==2) ||...
-                    ((k==9 || k==10 || k==11 || k==12) && temp==3)||...
-                    ((k==13 || k==14 || k==15 || k==16) && temp==4)
-                count = count+1;
+            % record distance between k-th test data and t-th train data
+            dist_k_t = ones(16,1);
+            for t = 1:16
+                dist_k_t(t) = dtw(data_test(:,k),data_train(:,t),warp_window);
             end
+            % get the nearest train_data
+            classify_result(k) = find(dist_k_t==min(dist_k_t),1);
         end
+        
+        % print the result
+        compare_array = [1,1,1,1,5,5,5,5,9,9,9,9,13,13,13,13]';
+        % accuracy
+        record(rep) = sum((abs(classify_result-compare_array)<4) == 1);
     end
-    precision_result(w) = count/1600;
+    accuracy(i) = sum(record)/1600;
+    fprintf('warp window:%f,   accuracy:%f\n',warp_window,accuracy(i));
+    i = i+1;
 end
